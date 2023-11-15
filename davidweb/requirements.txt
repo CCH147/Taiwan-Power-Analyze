@@ -19,12 +19,3 @@ Jinja2==2.11.3
 keyring==23.13.1
 mock==4.0.3
 pandas==1.4.4
-Pillow==10.1.0
-protobuf==4.25.0
-pyOpenSSL==23.3.0
-pywin32==305
-railroad==0.5.0
-redis==5.0.1
-Sphinx==5.0.2
-tornado==6.1
-trove_classifiers==2023.11.14
