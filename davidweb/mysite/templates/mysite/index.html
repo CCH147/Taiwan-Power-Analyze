@@ -35,16 +35,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body style="background-image: url('{% static 'page5.jpg' %}')">
+<h4 class="text-left">
+    {% csrf_token %}
+    {% for date in enddate %}
+    資料更新截止日期：{{ date.year }} 年
+    {{ date.month }} 月
+    {% endfor %}
+</h4>
+<br />
 
-    <h4 class="text-left">
-        {% csrf_token %}
-        {% for date in enddate %}
-        資料更新截止日期：{{ date.year }} 年
-        {{ date.month }} 月
-        {% endfor %}
-    </h4>
-    <br />
+<body style="background-image: url('{% static 'page5.jpg' %}')">
 
     <form method='POST'>
         {% csrf_token %}
